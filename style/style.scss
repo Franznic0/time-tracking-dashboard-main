@@ -42,7 +42,7 @@ ul {
     // font-size: .8em;
 }
 
-li:hover {
+li:hover{
     color: white;
     cursor: pointer;
 }
@@ -111,6 +111,18 @@ li:hover {
             .card-menu {
                 @include flex;
                 padding-bottom: .5rem;
+
+                .menu {
+                    // background-color: $bg-hover;
+                    width: 1.5rem;
+                    height: .5rem;   
+
+                    &:hover,
+                    :hover>path {    
+                        fill: white;
+                        cursor: pointer;
+                    }
+                }
             }
     
             .time {
@@ -125,6 +137,11 @@ li:hover {
                      font-size: .8em;
                 }
             }
+        }
+
+        .cards-wrapper:hover {
+            cursor: pointer;
+            background-color: $bg-hover;
         }
     }
 }

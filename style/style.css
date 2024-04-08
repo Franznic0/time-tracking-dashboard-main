@@ -9,6 +9,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.4rem;
+    width: 80%;
   }
   .container .profile-card {
     grid-row: 1/3;
@@ -154,6 +155,15 @@ li:hover {
   align-items: center;
   padding-bottom: 0.5rem;
 }
+.container .cards .cards-wrapper .card-menu .menu {
+  width: 1.5rem;
+  height: 0.5rem;
+}
+.container .cards .cards-wrapper .card-menu .menu:hover,
+.container .cards .cards-wrapper .card-menu .menu :hover > path {
+  fill: white;
+  cursor: pointer;
+}
 .container .cards .cards-wrapper .time {
   display: flex;
   justify-content: space-between;
@@ -165,6 +175,10 @@ li:hover {
 }
 .container .cards .cards-wrapper .time .previous-time {
   font-size: 0.8em;
+}
+.container .cards .cards-wrapper:hover {
+  cursor: pointer;
+  background-color: hsl(235, 45%, 61%);
 }
 
 #play {

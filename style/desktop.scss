@@ -1,6 +1,11 @@
 @import './variables';
 
 @media screen and (min-width: 680px) {
+    .main {
+        @include flex;
+        height: 100%;
+    }
+    
     .container {
         @include grid(repeat(4, 1fr), repeat(2, 1fr), 1.4rem);
 

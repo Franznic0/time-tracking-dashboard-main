@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-size: inherit;
+    font-size: $fs;
     font-weight: $fw-bold;
 }
 
@@ -55,7 +55,7 @@ li:hover {
 .container {
     @include grid(1fr, auto, 1.4rem);
 
-    width: 80%;
+    width: min(80%, 400px);
     margin: 5rem auto auto auto;
 
     .profile-card {
@@ -117,7 +117,7 @@ li:hover {
                 @include flex;
 
                 .actual-time {
-                    font-size: 1.7em;
+                    font-size: clamp(1.7em, 3vw, 2.9em);
                     font-weight: $fw-small;
                 }
 

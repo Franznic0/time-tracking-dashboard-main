@@ -1,14 +1,38 @@
 /* Primary colors */
 /* Neutral colors*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 680px) {
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.4rem;
+    width: 80%;
   }
   .container .profile-card {
-    grid-row: 1/2;
+    grid-row: 1/3;
     grid-column: 1/2;
+  }
+  .container .profile-card .profile-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 2rem;
+  }
+  .container .profile-card .profile-details h1 {
+    font-size: 1.8em;
+    margin-bottom: 3rem;
+  }
+  .container .profile-card .select-time > ul {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .container .cards > .cards-wrapper > .time {
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 1rem;
+    gap: 0.5rem;
   }
 }/*# sourceMappingURL=desktop.css.map */

@@ -207,6 +207,10 @@ li:hover {
   background-color: hsl(43, 84%, 65%);
 }
 
+.active {
+  color: white;
+}
+
 footer {
   margin-top: 1rem;
 }

@@ -39,7 +39,7 @@ h2,
 
 ul {
     list-style: none;
-    // font-size: .8em;
+    font-size: .8em;
 }
 
 li:hover{
@@ -113,15 +113,8 @@ li:hover{
                 padding-bottom: .5rem;
 
                 .menu {
-                    // background-color: $bg-hover;
                     width: 1.5rem;
-                    height: .5rem;   
-
-                    &:hover,
-                    :hover>path {    
-                        fill: white;
-                        cursor: pointer;
-                    }
+                    height: .5rem;  
                 }
             }
     
@@ -138,12 +131,11 @@ li:hover{
                 }
             }
         }
-
-        .cards-wrapper:hover {
-            cursor: pointer;
-            background-color: $bg-hover;
-        }
     }
+}
+
+.menu:hover>path {
+    fill: white;
 }
 
 #play {

@@ -30,7 +30,7 @@
     font-size: 1.8em;
     margin-bottom: 3rem;
   }
-  .container .profile-card .select-time > ul {
+  .container .profile-card .select-time > fieldset {
     flex-direction: column;
     align-items: baseline;
     gap: 1rem;

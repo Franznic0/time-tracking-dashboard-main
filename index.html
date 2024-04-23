@@ -27,18 +27,32 @@
               <img src="./images/image-jeremy.png" alt="User image">
             </div>
 
+            <!-- profile -->
             <div class="profile-name">
               <p>Report for</p>
               <h1>Jeremy Robson</h1>
             </div>
           </div>
 
+          <!-- timeframe visualized -->
           <div class="select-time">
-            <ul>
-              <li class="timeframe">Daily</li>
-              <li class="timeframe">Weekly</li>
-              <li class="timeframe">Monthly</li>
-            </ul>
+            <fieldset>
+              <legend aria-label="Select a timeframe"></legend>
+              <div class="input-wrapper">
+                <input type="radio" name="timeframe" id="daily" class="timeframe" value="daily">
+                <label for="daily">Daily</label>
+              </div>
+
+              <div class="input-wrapper">
+                <input type="radio" name="timeframe" id="weekly" class="timeframe" value="weekly" checked>
+                <label for="weekly">Weekly</label>
+              </div>
+
+              <div class="input-wrapper">
+                <input type="radio" name="timeframe" id="monthly" class="timeframe" value="monthly">
+                <label for="monthly">Monthly</label>
+              </div>
+            </fieldset>
           </div>
         </div>
         <!-- cards -->

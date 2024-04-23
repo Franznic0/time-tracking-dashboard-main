@@ -1,27 +1,17 @@
-const xmlhttp = new XMLHttpRequest();
-xmlhttp.onload = function() {
-  const myObj = JSON.parse(this.responseText);
-  console.log(myObj.title);
+// const xmlhttp = new XMLHttpRequest();
+// xmlhttp.onload = function() {
+//   const myObj = JSON.parse(this.responseText);
 
 
   
-};
-xmlhttp.open("GET", "../data.json");
+// };
+// xmlhttp.open("GET", "../data.json");
 
-const timeframe = () => {
-    var frameSelec = document.querySelectorAll('.timeframe');
+fetch('../js/data.json')
+  .then(response => response.json())
+  .then(data => {
+    const datesArray = JSON.stringify(data);
+    console.log(datesArray);
+
     
-    
-    for (let i=0; i < frameSelec.length; i++) {
-        frameSelec[i].addEventListener('click', function() {
-            
-            // toggle timeframe selection
-            this.classList.toggle('active');
-
-            // change to selected timeframe
-
-        });
-    };
-};
-
-timeframe();
+});

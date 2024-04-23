@@ -37,12 +37,22 @@ h2,
     color: white;
 }
 
-ul {
-    list-style: none;
+fieldset {
     font-size: .8em;
+    border: none;
 }
 
-li:hover{
+input {
+    visibility: hidden;
+    margin-left: -1rem;
+    
+    &:checked ~ label{
+        color: white;
+    }
+    
+}
+
+label:hover{
     color: white;
     cursor: pointer;
 }
@@ -80,7 +90,7 @@ li:hover{
             }
         }
 
-        .select-time > ul {
+        .select-time > fieldset {
             @include flex;
 
             width: 100%;

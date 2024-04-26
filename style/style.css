@@ -63,6 +63,10 @@ html {
   background-color: hsl(226, 43%, 10%);
 }
 
+main {
+  min-height: 90vh;
+}
+
 h1 {
   font-size: 1.1em;
   font-weight: 400;
@@ -229,5 +233,7 @@ footer {
   padding: 1rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(43, 84%, 65%);
+  text-decoration: none;
+  font-size: 1.1em;
 }/*# sourceMappingURL=style.css.map */

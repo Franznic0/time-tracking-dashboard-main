@@ -40,17 +40,17 @@
               <legend aria-label="Select a timeframe"></legend>
               <div class="input-wrapper">
                 <input type="radio" name="timeframe" id="daily" class="timeframe" value="daily">
-                <label for="daily">Daily</label>
+                <label for="daily" onclick="setDaily()">Daily</label>
               </div>
 
               <div class="input-wrapper">
                 <input type="radio" name="timeframe" id="weekly" class="timeframe" value="weekly" checked>
-                <label for="weekly">Weekly</label>
+                <label for="weekly" onclick="setWeekly()">Weekly</label>
               </div>
 
               <div class="input-wrapper">
                 <input type="radio" name="timeframe" id="monthly" class="timeframe" value="monthly">
-                <label for="monthly">Monthly</label>
+                <label for="monthly" onclick="setMonthly()">Monthly</label>
               </div>
             </fieldset>
           </div>
